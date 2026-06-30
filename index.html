@@ -77,6 +77,34 @@ height: 400px;
   <span>📅</span> <strong>23 de Junho de 2026</strong> — O dia de hoje foi de muita evolução técnica e descoberta para o <strong>1° Q</strong>. Aprendemos a inserir imagens diretamente no HTML e a realizar as primeiras formatações visuais nelas, além de explorarmos a tecnologia de inteligência artificial com a geração de imagens no Nano Banana. No aspecto da disciplina, a turma demonstrou uma postura geral bem melhor em comparação com as semanas anteriores, embora ainda falte respeito e foco por parte de alguns alunos nas explicações. Seguimos trabalhando para alinhar a convivência e potencializar a criatividade que o grupo tem de sobra!
 </p>
 
+<h2>💡 Dica de Web Design: Como centralizar imagens com CSS</h2>
+
+<p>
+  Muitas vezes, quando usamos a propriedade <code>text-align: center;</code> no CSS, ela funciona muito bem para textos, mas não mexe na nossa imagem. Para resolver esse problema de forma isolada e deixar o nosso mascote perfeitamente no meio da página, aprendemos um truque muito importante!
+</p>
+
+<!-- Exemplo visual do código explicativo -->
+<div style="background-color: #f4f4f4; border-left: 5px solid #d42d70; padding: 15px; margin: 20px auto; max-width: 600px; text-align: left; font-family: monospace;">
+  <span style="color: #008000;"><!-- Código correto para a tag img --></span><br>
+  <span style="color: #bd346b;">img</span> {<br>
+  &nbsp;&nbsp;width: 400px;<br>
+  &nbsp;&nbsp;height: 400px;<br>
+  &nbsp;&nbsp;<strong style="color: #000;">display: block;</strong> <span style="color: #666;">/* Transforma a imagem em bloco */</span><br>
+  &nbsp;&nbsp;<strong style="color: #000;">margin: 0 auto;</strong> <span style="color: #666;">/* Alinha os lados automaticamente */</span><br>
+  }
+</div>
+
+<h3>🛠️ Entendendo as propriedades:</h3>
+
+<ul style="text-align: left; max-width: 600px; margin: 0 auto 20px auto;">
+  <li><strong><code>display: block;</code>:</strong> Por padrão, as imagens ficam na mesma linha dos textos. Ao mudar para bloco, dizemos ao navegador que a imagem deve ocupar a sua própria linha exclusiva no site.</li>
+  <li><strong><code>margin: 0 auto;</code>:</strong> O valor <code>auto</code> indica para o navegador calcular o espaço restante nas laterais esquerda e direita de forma igual, empurrando o elemento exatamente para o centro da tela.</li>
+</ul>
+
+<p>
+  Agora que dominamos esse truque, nossos layouts vão ficar muito mais organizados e profissionais! Testem nos seus projetos individuais e vejam a mágica acontecer.
+</p>
+
 
 </main>
 
