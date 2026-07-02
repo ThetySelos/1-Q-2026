@@ -166,6 +166,86 @@ img {
 </div>
 
 </div>
+<hr style="border: 0; border-top: 2px solid #bd346b; margin: 40px auto; max-width: 100%;">
+
+<!-- INÍCIO DO POST ENERSTRE DE LINHAS -->
+<h2>📅 02 de Julho de 2026 — Aprendendo a Organizar o Blog com Linhas Divisórias</h2>
+
+<p>
+  Com tantas postagens legais surgindo no nosso site, é muito importante manter o design limpo e fácil de ler. Hoje aprendemos a usar a tag <strong><code>&lt;hr&gt;</code></strong> (Horizontal Rule), que serve para criar linhas horizontais e separar os conteúdos de forma profissional!
+</p>
+
+<h3>🛠️ Como colocar a linha no seu código HTML?</h3>
+<p>
+  Diferente de tags como <code>&lt;p&gt;</code> ou <code>&lt;h2&gt;</code>, a tag <code>&lt;hr&gt;</code> é uma tag de **fechamento automático**. Isso significa que você não precisa colocar um <code>&lt;/hr&gt;</code> no final. Basta digitar a tag exatamente onde quer a divisão!
+</p>
+
+<!-- Caixa com o exemplo prático de código para os alunos copiarem -->
+<div style="background-color: #f4f4f4; border-left: 5px solid #d42d70; padding: 15px; margin: 20px auto; max-width: 600px; text-align: left; font-family: monospace;">
+  <span style="color: #666;">&lt;p&gt;Texto do primeiro post do blog...&lt;/p&gt;</span><br><br>
+  
+  <span style="color: #008000;"><!-- ESSA É A LINHA ESTILIZADA --></span><br>
+  <strong>&lt;hr style="border: 0; border-top: 1px solid #bd346b; margin: 30px auto; max-width: 90%; opacity: 0.5;"&gt;</strong><br><br>
+  
+  <span style="color: #666;">&lt;p&gt;Texto do segundo post do blog...&lt;/p&gt;</span>
+</div>
+
+<h3>🎨 Entendendo os estilos usados na linha:</h3>
+<ul style="text-align: left; max-width: 600px; margin: 0 auto 20px auto;">
+  <li><strong><code>border-top: 1px solid #bd346b;</code>:</strong> Define a espessura fina (1px) e a cor da linha usando o tom oficial do nosso blog.</li>
+  <li><strong><code>max-width: 90%;</code>:</strong> Faz com que a linha não encoste totalmente nas laterais da página, deixando o visual mais elegante.</li>
+  <li><strong><code>margin: 30px auto;</code>:</strong> Garante um espaço livre de 30 pixels acima e abaixo da linha e a mantém perfeitamente centralizada.</li>
+  <li><strong><code>opacity: 0.5;</code>:</strong> Deixa a linha suave e levemente transparente para não brigar com a leitura do texto.</li>
+</ul>
+
+<p>
+  💡 <strong>Desafio para a aula de hoje:</strong> Abra seu arquivo no VS Code e aplique essa linha estilizada entre as três postagens que vocês criaram nas semanas anteriores!
+</p>
+<!-- FIM DO POST -->
+<hr style="border: 0; border-top: 2px solid #bd346b; margin: 40px auto; max-width: 100%;">
+
+<!-- INÍCIO DO POST: CARROSSEL DE VÍDEOS -->
+<h2>📅 02 de Julho de 2026 — Como Criar um Carrossel de Vídeos no Blog</h2>
+
+<p>
+  Se o seu grupo tem mais de um vídeo ou quer organizar indicações de clipes e podcasts de forma moderna, o <strong>Carrossel Horizontal</strong> é a melhor solução! Com ele, os vídeos ficam lado a lado e o usuário pode navegar deslizando para os lados, igualzinho aos aplicativos de streaming.
+</p>
+
+<h3>🛠️ Código Prático para o seu HTML</h3>
+<p>
+  Para fazer a mágica acontecer, criamos uma caixa organizadora (uma tag <code>&lt;div&gt;</code>) com propriedades CSS que ativam a rolagem horizontal automática. Copie o modelo abaixo e substitua pelos links dos seus vídeos:
+</p>
+
+<!-- Caixa com o código para os alunos copiarem -->
+<div style="background-color: #f4f4f4; border-left: 5px solid #d42d70; padding: 15px; margin: 20px auto; max-width: 650px; text-align: left; font-family: monospace; font-size: 14px; line-height: 1.5; overflow-x: auto;">
+  <span style="color: #666;">&lt;!-- Início do Carrossel --&gt;</span><br>
+  &lt;<span style="color: #bd346b;">div</span> <span style="color: #e36209;">style</span>=<span style="color: #032f62;">"display: flex; overflow-x: auto; gap: 20px; padding: 15px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;"</span>&gt;<br><br>
+  
+  &nbsp;&nbsp;<span style="color: #666;">&lt;!-- Vídeo 1 --&gt;</span><br>
+  &nbsp;&nbsp;&lt;<span style="color: #bd346b;">iframe</span> <span style="color: #e36209;">width</span>=<span style="color: #032f62;">"420"</span> <span style="color: #e36209;">height</span>=<span style="color: #032f62;">"236"</span> <span style="color: #e36209;">src</span>=<span style="color: #032f62;">"https://youtube.com"</span> <span style="color: #e36209;">frameborder</span>=<span style="color: #032f62;">"0"</span> <span style="color: #e36209;">allowfullscreen style="flex: 0 0 auto; scroll-snap-align: start; border-radius: 8px;"</span>&gt;&lt;/<span style="color: #bd346b;">iframe</span>&gt;<br><br>
+
+  &nbsp;&nbsp;<span style="color: #666;">&lt;!-- Vídeo 2 --&gt;</span><br>
+  &nbsp;&nbsp;&lt;<span style="color: #bd346b;">iframe</span> <span style="color: #e36209;">width</span>=<span style="color: #032f62;">"420"</span> <span style="color: #e36209;">height</span>=<span style="color: #032f62;">"236"</span> <span style="color: #e36209;">src</span>=<span style="color: #032f62;">"https://youtube.com"</span> <span style="color: #e36209;">frameborder</span>=<span style="color: #032f62;">"0"</span> <span style="color: #e36209;">allowfullscreen style="flex: 0 0 auto; scroll-snap-align: start; border-radius: 8px;"</span>&gt;&lt;/<span style="color: #bd346b;">iframe</span>&gt;<br><br>
+
+  &nbsp;&nbsp;<span style="color: #666;">&lt;!-- Vídeo 3 --&gt;</span><br>
+  &nbsp;&nbsp;&lt;<span style="color: #bd346b;">iframe</span> <span style="color: #e36209;">width</span>=<span style="color: #032f62;">"420"</span> <span style="color: #e36209;">height</span>=<span style="color: #032f62;">"236"</span> <span style="color: #e36209;">src</span>=<span style="color: #032f62;">"https://youtube.com"</span> <span style="color: #e36209;">frameborder</span>=<span style="color: #032f62;">"0"</span> <span style="color: #e36209;">allowfullscreen style="flex: 0 0 auto; scroll-snap-align: start; border-radius: 8px;"</span>&gt;&lt;/<span style="color: #bd346b;">iframe</span>&gt;<br><br>
+
+  &lt;/<span style="color: #bd346b;">div</span>&gt;<br>
+  <span style="color: #666;">&lt;!-- Fim do Carrossel --&gt;</span>
+</div>
+
+<h3>🧠 Como essa mágica do CSS funciona?</h3>
+<ul style="text-align: left; max-width: 600px; margin: 0 auto 20px auto;">
+  <li><strong><code>display: flex;</code>:</strong> Coloca todos os vídeos um ao lado do outro em uma única linha.</li>
+  <li><strong><code>overflow-x: auto;</code>:</strong> Cria a barra de rolagem horizontal sempre que os vídeos passarem do limite da tela.</li>
+  <li><strong><code>gap: 20px;</code>:</strong> Adiciona um espaçamento de 20 pixels entre os vídeos para que eles não fiquem colados.</li>
+  <li><strong><code>flex: 0 0 auto;</code>:</strong> Propriedade fundamental dentro dos <code>&lt;iframe&gt;</code> que impede o navegador de esmagar o tamanho dos vídeos.</li>
+</ul>
+
+<p>
+  💡 <strong>Dica de ouro:</strong> Lembre-se de usar a URL de <em>incorporação</em> do YouTube (com o termo <code>/embed/</code> no link) para que os vídeos funcionem diretamente na sua página!
+</p>
+<!-- FIM DO POST -->
 
 
 </main>
