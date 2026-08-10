@@ -249,7 +249,79 @@ img {
 <p style="text-align: center;">
   <a href="dicas.html" style="color: #d42d70; font-weight: bold; text-decoration: underline;">👉 Clique aqui para acessar nosso Guia Interativo de Dicas!</a>
 </p>
+<!-- INÍCIO DO POST: COMO PUBLICAR O PODCAST -->
+<h2>🎙️ Hora do Lançamento: Como Publicar seu Podcast no Blog</h2>
 
+<p>
+  Depois de muito planejamento, chegou o momento mais esperado: colocar o nosso podcast no ar! Como as equipes usaram formatos diferentes, confiram abaixo os comandos exatos para publicar arquivos de áudio (MP3) ou de vídeo (MP4) direto na sua página.
+</p>
+
+<h3>🎵 Opção 1: Seu Podcast está em Áudio (Arquivo .MP3)</h3>
+<p>
+  Se o seu grupo gravou apenas o áudio do podcast, usamos a tag <code>&lt;audio&gt;</code>. O comando obrigatório <code>controls</code> é o que faz aparecer os botões de Play e a barra de volume na tela:
+</p>
+
+<!-- Caixa de código para MP3 -->
+<div style="background-color: #f4f4f4; border-left: 5px solid #d42d70; padding: 15px; margin: 20px auto; max-width: 650px; text-align: left; font-family: monospace; font-size: 14px; line-height: 1.5;">
+  &lt;<span style="color: #bd346b;">div</span> <span style="color: #e36209;">style</span>=<span style="color: #032f62;">"display: flex; justify-content: center; margin: 20px 0;"</span>&gt;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color: #bd346b;">audio</span> <span style="color: #e36209;">controls</span>&gt;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color: #bd346b;">source</span> <span style="color: #e36209;">src</span>=<span style="color: #032f62;">"nome-do-seu-arquivo.mp3"</span> <span style="color: #e36209;">type</span>=<span style="color: #032f62;">"audio/mp3"</span>&gt;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span style="color: #bd346b;">audio</span>&gt;<br>
+  &lt;/<span style="color: #bd346b;">div</span>&gt;
+</div>
+
+<h3>📺 Opção 2: Seu Videocast está em Vídeo (Arquivo .MP4)</h3>
+<p>
+  Se o seu grupo gravou o podcast em formato de vídeo, usamos a tag <code>&lt;video&gt;</code>. Configuramos uma largura padrão de 640px para o player encaixar perfeitamente no nosso layout centralizado:
+</p>
+
+<!-- Caixa de código para MP4 -->
+<div style="background-color: #f4f4f4; border-left: 5px solid #1A3957; padding: 15px; margin: 20px auto; max-width: 650px; text-align: left; font-family: monospace; font-size: 14px; line-height: 1.5;">
+  &lt;<span style="color: #bd346b;">div</span> <span style="color: #e36209;">style</span>=<span style="color: #032f62;">"display: flex; justify-content: center; margin: 20px 0;"</span>&gt;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color: #bd346b;">video</span> <span style="color: #e36209;">width</span>=<span style="color: #032f62;">"640"</span> <span style="color: #e36209;">height</span>=<span style="color: #032f62;">"360"</span> <span style="color: #e36209;">controls</span>&gt;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color: #bd346b;">source</span> <span style="color: #e36209;">src</span>=<span style="color: #032f62;">"nome-do-seu-video.mp4"</span> <span style="color: #e36209;">type</span>=<span style="color: #032f62;">"video/mp4"</span>&gt;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span style="color: #bd346b;">video</span>&gt;<br>
+  &lt;/<span style="color: #bd346b;">div</span>&gt;
+</div>
+
+<h3>⚠️ Alerta Importante de Organização (Não Esqueçam!)</h3>
+<p style="text-align: left; max-width: 600px; margin: 0 auto;">
+  Para que o áudio ou o vídeo funcionem no site, o arquivo do podcast precisa estar salvo **dentro da mesma pasta do projeto no VS Code**, exatamente junto com o seu arquivo <code>index.html</code>. No código, mude o texto entre aspas do <code>src=""</code> para o nome idêntico do seu arquivo!
+</p>
+
+<p>
+  🚀 <strong>Dica de design:</strong> Lembre-se de colocar um título <code>&lt;h3&gt;</code> acima do seu tocador com o nome do episódio do seu grupo para o blog ficar bem organizado!
+</p>
+<!-- FIM DO POST -->
+<hr style="border: 0; border-top: 2px solid #bd346b; margin: 40px auto; max-width: 100%;">
+
+<!-- INÍCIO DO POST: TRANSFERÊNCIA DO CELULAR PARA O COMPUTADOR -->
+<h2>📅 Passo a Passo: Como passar o Podcast do Celular para o Computador da Escola</h2>
+
+<p>
+  Gravaram o podcast ou videocast no celular e agora precisam passar o arquivo para o VS Code no computador? A melhor forma de fazer isso sem perder a qualidade e de um jeito super seguro é usando o <strong>Google Drive</strong>. Confiram o guia rápido:
+</p>
+
+<h3>📱 Parte 1: No Celular (Enviando o arquivo)</h3>
+<ol style="text-align: left; max-width: 650px; margin: 15px auto; line-height: 1.6;">
+  <li>Abra o aplicativo do <strong>Google Drive</strong> no seu celular (faça login com a sua conta do Google se precisar).</li>
+  <li>Clique no botão flutuante de <strong>"+" (Mais)</strong> e escolha a opção <strong>Fazer upload</strong> (ou Carregar).</li>
+  <li>Procure e selecione o arquivo do seu podcast (seja o <code>.mp3</code> ou o <code>.mp4</code>) e aguarde o carregamento terminar.</li>
+</ol>
+
+<h3>💻 Parte 2: No Computador do Laboratório (Baixando o arquivo)</h3>
+<ol style="text-align: left; max-width: 650px; margin: 15px auto; line-height: 1.6;">
+  <li>Abra o navegador e acesse o site do <a href="https://google.com" target="_blank" style="color: #d42d70; font-weight: bold; text-decoration: underline;">Google Drive</a>.</li>
+  <li>Faça o login com a <strong>mesma conta</strong> que você usou no celular.</li>
+  <li>Localize o arquivo do podcast, clique nos três pontinhos ao lado dele e selecione <strong>Fazer download</strong> (Baixar).</li>
+</ol>
+
+<p>
+  ⚠️ <strong>Último passo obrigatório:</strong> O arquivo vai direto para a pasta "Downloads" do computador. Você deve recortar ou copiar esse arquivo de lá e colá-lo <strong>dentro da pasta do seu projeto do site</strong>, bem ao lado do seu arquivo <code>index.html</code>. Só depois disso mude o nome no código!
+</p>
+<!-- FIM DO POST -->
 
 
 </main>
