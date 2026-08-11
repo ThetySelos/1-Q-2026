@@ -322,68 +322,83 @@ img {
   ⚠️ <strong>Último passo obrigatório:</strong> O arquivo vai direto para a pasta "Downloads" do computador. Você deve recortar ou copiar esse arquivo de lá e colá-lo <strong>dentro da pasta do seu projeto do site</strong>, bem ao lado do seu arquivo <code>index.html</code>. Só depois disso mude o nome no código!
 </p>
 <!-- FIM DO POST -->
-/* Adicione este código dentro da sua tag <style> */
-.botao-like {
-    background-color: transparent;
-    color: #d42d70;
-    border: 2px solid #d42d70;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 30px; /* Deixa o botão totalmente arredondado */
-    cursor: pointer;
-    transition: all 0.3s ease; /* Cria a transição suave */
-    display: inline-flex;
-    align-items: center;
-    gap: 8px; /* Espaço entre o coração e o texto */
-}
+<hr style="border: 0; border-top: 2px solid #bd346b; margin: 40px auto; max-width: 100%;">
 
-/* Efeito ao aproximar o mouse */
-.botao-like:hover {
-    background-color: #d42d70;
-    color: #FFFFFF;
-    transform: scale(1.05); /* Dá um leve zoom no botão */
-}
+<!-- INÍCIO DO POST: ESTILIZANDO O BOTÃO DE LIKE -->
+<h2>📅 11 de Agosto de 2026 — Deixando o nosso Botão de Likes Profissional com CSS</h2>
 
-/* Efeito de clique (pulsar) */
-.botao-like:active {
-    transform: scale(0.95);
-}
-/* Adicione este código dentro da sua tag <style> */
-.botao-like-solido {
-    background-color: #1A3957;
-    color: #FFFFFF;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px; /* Bordas levemente suavizadas */
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
+<p>
+  O nosso botão de curtidas já está funcionando perfeitamente na programação! Mas que tal tirarmos aquele visual padrão e sem graça do navegador e deixá-lo com a identidade do nosso blog? Hoje vamos aprender como usar o <strong>CSS</strong> para transformar o design do botão e adicionar efeitos visuais incríveis de cliques e aproximação!
+</p>
 
-/* Efeito ao aproximar o mouse */
-.botao-like-solido:hover {
-    background-color: #bd346b; /* Muda para o tom contrastante */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px); /* Faz o botão subir de leve */
-}
+<h3>🛠️ Passo 1: Adicionando o Estilo na tag &lt;style&gt;</h3>
+<p>
+  Para começar, escolha uma das opções abaixo, copie o código e cole lá em cima, dentro da tag <code>&lt;style&gt;</code> do seu cabeçalho (head):
+</p>
 
-/* Efeito de clique */
-.botao-like-solido:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-<!-- Se escolher a Opção 1 -->
-<button class="botao-like">❤️ Curtir</button>
+<!-- ABAS DE OPÇÕES DE CÓDIGO -->
+<h4>Opção A: Estilo Arredondado e Moderno (Cores do 1° M)</h4>
+<div style="background-color: #f4f4f4; border-left: 5px solid #d42d70; padding: 15px; margin: 15px auto; max-width: 650px; text-align: left; font-family: monospace; font-size: 13px; line-height: 1.5;">
+  <span style="color: #bd346b;">.botao-like</span> {<br>
+  &nbsp;&nbsp;background-color: transparent;<br>
+  &nbsp;&nbsp;color: <span style="color: #032f62;">#d42d70</span>;<br>
+  &nbsp;&nbsp;border: <span style="color: #032f62;">2px solid #d42d70</span>;<br>
+  &nbsp;&nbsp;padding: <span style="color: #032f62;">10px 20px</span>;<br>
+  &nbsp;&nbsp;font-weight: bold;<br>
+  &nbsp;&nbsp;border-radius: <span style="color: #032f62;">30px</span>; <span style="color: #666;">/* Deixa o botão redondo */</span><br>
+  &nbsp;&nbsp;cursor: pointer;<br>
+  &nbsp;&nbsp;transition: <span style="color: #032f62;">all 0.3s ease</span>; <span style="color: #666;">/* Deixa o efeito suave */</span><br>
+  }<br>
+  <span style="color: #bd346b;">.botao-like:hover</span> {<br>
+  &nbsp;&nbsp;background-color: <span style="color: #032f62;">#d42d70</span>;<br>
+  &nbsp;&nbsp;color: <span style="color: #032f62;">#FFFFFF</span>;<br>
+  &nbsp;&nbsp;transform: <span style="color: #032f62;">scale(1.05)</span>; <span style="color: #666;">/* Dá um leve zoom ao passar o mouse */</span><br>
+  }
+</div>
 
-<!-- Se escolher a Opção 2 -->
-<button class="botao-like-solido">❤️ Curtir</button>
+<h4>Opção B: Estilo Sólido com Sombra (Cores do 1° Q)</h4>
+<div style="background-color: #f4f4f4; border-left: 5px solid #1A3957; padding: 15px; margin: 15px auto; max-width: 650px; text-align: left; font-family: monospace; font-size: 13px; line-height: 1.5;">
+  <span style="color: #bd346b;">.botao-like-solido</span> {<br>
+  &nbsp;&nbsp;background-color: <span style="color: #032f62;">#1A3957</span>;<br>
+  &nbsp;&nbsp;color: <span style="color: #032f62;">#FFFFFF</span>;<br>
+  &nbsp;&nbsp;border: none;<br>
+  &nbsp;&nbsp;padding: <span style="color: #032f62;">12px 24px</span>;<br>
+  &nbsp;&nbsp;font-weight: bold;<br>
+  &nbsp;&nbsp;border-radius: <span style="color: #032f62;">8px</span>;<br>
+  &nbsp;&nbsp;cursor: pointer;<br>
+  &nbsp;&nbsp;box-shadow: <span style="color: #032f62;">0 4px 6px rgba(0,0,0,0.1)</span>; <span style="color: #666;">/* Cria uma sombra macia */</span><br>
+  &nbsp;&nbsp;transition: <span style="color: #032f62;">all 0.2s ease</span>;<br>
+  }<br>
+  <span style="color: #bd346b;">.botao-like-solido:hover</span> {<br>
+  &nbsp;&nbsp;background-color: <span style="color: #032f62;">#bd346b</span>;<br>
+  &nbsp;&nbsp;transform: <span style="color: #032f62;">translateY(-2px)</span>; <span style="color: #666;">/* Levanta o botão de leve */</span><br>
+  }
+</div>
 
+<h3>🏷️ Passo 2: Conectando o Estilo ao seu Botão HTML</h3>
+<p>
+  Para que o navegador saiba qual visual aplicar, os grupos precisam adicionar o atributo <code>class</code> idêntico dentro da tag do botão que já criaram no corpo (body) do site:
+</p>
+
+<div style="background-color: #f4f4f4; border-left: 5px solid #228b22; padding: 15px; margin: 20px auto; max-width: 650px; text-align: left; font-family: monospace; font-size: 14px; line-height: 1.5;">
+  <span style="color: #666;">&lt;!-- Se escolheu o estilo Arredondado (Opção A) --&gt;</span><br>
+  &lt;<span style="color: #bd346b;">button</span> <span style="color: #e36209;">class</span>=<span style="color: #032f62;">"botao-like"</span>&gt;❤️ Curtir&lt;/<span style="color: #bd346b;">button</span>&gt;<br><br>
+  
+  <span style="color: #666;">&lt;!-- Se escolheu o estilo Sólido (Opção B) --&gt;</span><br>
+  &lt;<span style="color: #bd346b;">button</span> <span style="color: #e36209;">class</span>=<span style="color: #032f62;">"botao-like-solido"</span>&gt;❤️ Curtir&lt;/<span style="color: #bd346b;">button</span>&gt;
+</div>
+
+<h3>🧠 O que aprendemos hoje?</h3>
+<ul style="text-align: left; max-width: 600px; margin: 0 auto 20px auto; line-height: 1.6;">
+  <li><strong><code>:hover</code>:</strong> É uma pseudo-classe do CSS. Ela ativa as regras de estilo apenas quando o ponteiro do mouse fica posicionado em cima do botão.</li>
+  <li><strong><code>transition</code>:</strong> Controla o tempo que o botão demora para mudar de cor, criando uma animação suave em vez de uma troca brusca.</li>
+  <li><strong><code>transform</code>:</strong> Permite mover o botão no espaço, mudando sua escala (zoom) ou posição na tela para dar a sensação de interatividade.</li>
+</ul>
+
+<p>
+  🚀 <strong>Desafio prático no laboratório:</strong> Apliquem o estilo escolhido no código de vocês e testem trocar os códigos das cores hexadecimais para usar exatamente a paleta de cores oficial que cada grupo definiu para o seu próprio tema!
+</p>
+<!-- FIM DO POST -->
 
 </main>
 
