@@ -322,6 +322,67 @@ img {
   ⚠️ <strong>Último passo obrigatório:</strong> O arquivo vai direto para a pasta "Downloads" do computador. Você deve recortar ou copiar esse arquivo de lá e colá-lo <strong>dentro da pasta do seu projeto do site</strong>, bem ao lado do seu arquivo <code>index.html</code>. Só depois disso mude o nome no código!
 </p>
 <!-- FIM DO POST -->
+/* Adicione este código dentro da sua tag <style> */
+.botao-like {
+    background-color: transparent;
+    color: #d42d70;
+    border: 2px solid #d42d70;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px; /* Deixa o botão totalmente arredondado */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Cria a transição suave */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o coração e o texto */
+}
+
+/* Efeito ao aproximar o mouse */
+.botao-like:hover {
+    background-color: #d42d70;
+    color: #FFFFFF;
+    transform: scale(1.05); /* Dá um leve zoom no botão */
+}
+
+/* Efeito de clique (pulsar) */
+.botao-like:active {
+    transform: scale(0.95);
+}
+/* Adicione este código dentro da sua tag <style> */
+.botao-like-solido {
+    background-color: #1A3957;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px; /* Bordas levemente suavizadas */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Efeito ao aproximar o mouse */
+.botao-like-solido:hover {
+    background-color: #bd346b; /* Muda para o tom contrastante */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* Faz o botão subir de leve */
+}
+
+/* Efeito de clique */
+.botao-like-solido:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+<!-- Se escolher a Opção 1 -->
+<button class="botao-like">❤️ Curtir</button>
+
+<!-- Se escolher a Opção 2 -->
+<button class="botao-like-solido">❤️ Curtir</button>
 
 
 </main>
